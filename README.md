@@ -1,5 +1,5 @@
 # Exno.3-Scenario-Based Report Development Utilizing Diverse Prompting Techniques
-### DATE:                                                                            
+### DATE:10-05-2025                                                                           
 ### REGISTER NUMBER : 212223040030
 ### Developed by: DAPPILI VASAVI
 
@@ -7,245 +7,243 @@
 To design an AI-powered chatbot that assists customers in resolving issues related to product troubleshooting, order tracking, and general inquiries. The chatbot should handle various customer queries efficiently while maintaining a conversational and user-friendly tone. In this experiment, we will employ different prompt patterns to guide the development process of the chatbot, ranging from basic task-oriented prompts to more complex, persona-driven prompts.
 
 ## Algorithm: 
+## 1. Direct Instruction Prompting
+## Objective: Guide the chatbot to respond concisely to customer inquiries.
+## Prompt Pattern:
+## Prompt:
 
-## 1. Direct Instruction Prompts
-### Objective: Guide the chatbot to respond concisely to customer inquiries.
-
-### Prompt Pattern:
-
-### Prompt:
-"When a customer asks for the status of their order, reply with: 'Your order is currently being processed and will be delivered by [date].'"
+"When a customer asks for the status of their order, reply with:
+'Your order is currently being processed and will be delivered by [date].'"
+## Use Case:
+For quick and clear responses to common queries such as order status, refund confirmation, or operating hours.
 
 ## 2. Contextual Prompting
+## Objective: Incorporate specific context to provide detailed answers based on the user’s previous interaction.
+## Prompt Pattern:
+## Prompt:
 
-Objective: Incorporate specific context to provide detailed answers based on the user’s previous interaction.
-
-### Prompt Pattern:
-
-### Prompt: 
-"If the customer previously mentioned that they haven’t received their order, say, 'I see that you mentioned your order hasn't arrived yet. Let me check the details for you and get back shortly.'"
+"If the customer previously mentioned that they haven’t received their order, say:
+'I see that you mentioned your order hasn't arrived yet. Let me check the details for you and get back shortly.'"
+## Use Case:
+Useful for multi-turn conversations where the chatbot must remember and reference earlier parts of the chat to maintain coherence.
 
 ## 3. Persona-Based Prompting
+## Objective: Design the chatbot to adopt a specific persona, making the interaction more engaging.
+## Prompt Pattern:
+## Prompt:
 
-### Objective: Design the chatbot to adopt a specific persona, making the interaction more engaging.
-
-### Prompt Pattern:
-
-### Prompt: 
-"Pretend you are a friendly, helpful customer service representative. Use a conversational tone, such as 'Hey there! I’m here to help with any questions you might have. Let’s get your issue sorted!'"
+"Pretend you are a friendly, helpful customer service representative. Use a conversational tone, such as:
+'Hey there! I’m here to help with any questions you might have. Let’s get your issue sorted!'"
+## Use Case:
+Best for enhancing customer experience by making the bot feel more human-like, on-brand, and approachable.
 
 ## 4. Few-Shot Prompting
+## Objective: Teach the AI how to respond using a few examples, enabling it to generalize for similar situations.
+## Prompt Pattern:
+## Prompt:
 
-### Objective: Teach the AI how to respond using a few examples, enabling it to generalize for similar situations.
-
-### Prompt Pattern:
-
-### Prompt: 
 "Here are some examples of how to handle technical questions:
-
 'My phone isn't charging.' → 'Have you tried using a different cable? If that doesn’t work, it may be an issue with the port.'
 'The screen is flickering.' → 'It sounds like a display issue. Have you tried restarting the device?'
-
 Now, respond to: 'My app keeps crashing.'"
+## Use Case:
+Ideal for training the chatbot on how to respond to less common or varied support requests with appropriate tone and content.
 
 ## 5. Chain of Thought Prompting
+## Objective: Use a step-by-step reasoning approach for resolving more complex or technical issues.
+## Prompt Pattern:
+## Prompt:
 
-### Objective: Use a step-by-step reasoning approach for resolving more complex or technical issues.
-
-### Prompt Pattern:
-
-### Prompt: "When a customer reports their laptop overheating, guide them through the following steps:
-
+"When a customer reports their laptop overheating, guide them through the following steps:
 Ask if they are using the laptop on a soft surface.
-
 Suggest moving the laptop to a flat, hard surface for better airflow.
-
 Ask if they’ve cleaned the vents recently.
-
 Recommend restarting the device to see if the issue persists.
-
 Now, solve: 'My laptop fan is making a loud noise.'"
+## Use Case:
+Helpful in tech support scenarios where the problem-solving process involves logical sequencing and troubleshooting.
 
 ## 6. Instruction with Constraints
+## Objective: Instruct the chatbot to provide assistance while adhering to specific constraints (e.g., response length or tone).
+## Prompt Pattern:
+## Prompt:
 
-### Objective: Instruct the chatbot to provide assistance while adhering to specific constraints (e.g., response length or tone).
-
-### Prompt Pattern:
-
-### Prompt:
-"Respond to order inquiries in no more than 50 words and avoid using technical jargon. For example, 'Your order is on the way and should arrive by [date]. Feel free to reach out if you need anything else.'"
+"Respond to order inquiries in no more than 50 words and avoid using technical jargon.
+For example: 'Your order is on the way and should arrive by [date]. Feel free to reach out if you need anything else.'"
+## Use Case:
+Useful when the chatbot must respond within tight UX or brand guidelines—such as character limits, simplicity for non-tech users, or specific voice guidelines.
 
 ## 7. Reflective Prompting
+## Objective: Ensure that the chatbot reflects the user’s query back to them before providing a response, reducing misunderstandings.
+## Prompt Pattern:
+## Prompt:
 
-### Objective: Ensure that the chatbot reflects the user’s query back to them before providing a response, reducing misunderstandings.
+"When a customer asks for help, first reflect their question back to them.
+For example, if they ask 'How can I reset my password?' respond with:
+'You're asking how to reset your password, correct? Here’s how you can do it.'"
+## Use Case:
+Best used in sensitive or high-stakes conversations (e.g., billing, account access), where confirming intent avoids errors or miscommunication.
 
-### Prompt Pattern:
+## Algorithm:
+## STEP 1: Define the Use Case
 
-### Prompt:
-"When a customer asks for help, first reflect their question back to them. For example, if they ask 'How can I reset my password?' respond with 'You're asking how to reset your password, correct? Here’s how you can do it.'"
+Goal: Help users schedule or manage medical appointments.
 
-Result: The various types of Prompts are executed successfully.
+Target: Patients interacting via a hospital website or mobile app.
 
-## 📚 Use Case
+## STEP 2: Select Suitable Prompting Techniques
 
-**Social Media Posts:**  
-The system is designed to tailor product recommendations based on user preferences such as past `posts, browsing history, and selected interests.
-For each prompt type, the AI tools (ChatGPT and Claude) are asked to analyze a social media post and predict sentiment, engagement potential, and offer insights into tone and language used.
+Based on complexity, context sensitivity, and emotional tone.
 
----
+## STEP 3: Design Prompt Templates
 
-## ⚙️ ALGORITHM
+Use appropriate language structure, tone, and sample interactions.
 
-### Step 1: Define Use Case
-We are analyzing a set of social media posts to determine public sentiment, engagement levels, and actionable insights. The goal is to evaluate the effectiveness of each prompting technique on two different AI platforms: **ChatGPT** and **Claude**.
+## STEP 4: Implement Prompt-Driven Responses
 
-### Step 2: Define Prompting Techniques
-1. **Preceding Question Prompting:** Use a question that references the context of the post or its content for analysis.
-2. **Comparative Analysis Prompt:** Ask the model to compare the current post with others or with a specific benchmark.
-3. **Experiential Perspective Prompt:** Request the model to analyze the post as if it's a real-life scenario or with a human perspective.
+Feed prompts into a language model to simulate chatbot dialogue.
 
-### Step 3: Submit Prompts to AI Tools
-Each prompt will be tested on both **ChatGPT** and **Claude** to observe how they handle different contexts and sentiment analysis.
+## STEP 5: Test and Evaluate
 
-### Step 4: Collect Outputs
-Record the outputs from both platforms for each of the three prompts.
+Compare outputs from different techniques.
 
-### Step 5: Analyze Outputs
-Evaluate the output for:
+Validate accuracy, tone, and contextual understanding.
 
-- Accuracy of sentiment analysis
-- Relevance of the response
-- Insightfulness of the analysis
-- How well the AI models handle the type of prompt provided
-
----
+## 🔄 Revised Prompting Strategy: Clarification-Based Prompting
+## 🔹 Objective:
+To improve the chatbot’s accuracy by encouraging it to ask clarifying questions before giving a solution when user queries are vague or ambiguous.
 
 ## 🧪 PROMPTS & OUTPUT OVERVIEW
+1. Clarification-Based Prompting
+Objective: To handle unclear queries by prompting the AI to ask follow-up questions before responding.
 
-### 1. Preceding Question Prompting
+## Prompt:
 
-- **Objective**: To analyze sentiment and predict engagement based on context from the preceding questions.
- 
-**Prompt:**
-> "Given the following social media post, can you assess the public sentiment and predict the level of engagement? 
-> 'Just launched our new eco-friendly product line! Super excited to make a difference. #SustainableLiving #EcoFriendlyProducts'"
+"If a customer says, 'My product isn't working,' ask a clarifying question before attempting to solve the issue. For example:
+'I'm sorry to hear that! Could you please tell me which product you're referring to and describe the issue in a bit more detail?'"
 
-- **ChatGPT Output:**
-  - Sentiment: Positive
-  - Engagement Prediction: High, due to the excitement around sustainability.
-  - Reasoning: The post conveys enthusiasm, which often correlates with higher engagement.
+## ChatGPT Output:
+Response: “I'm sorry you're having trouble. Could you let me know which product you're referring to and what specifically isn't working?”
 
-- **Claude Output:**
-  - Sentiment: Positive
-  - Engagement Prediction: Likely to generate significant engagement due to popular hashtags and a focus on sustainability.
-  - Reasoning: Focus on eco-friendliness and the use of trending hashtags suggests higher engagement.
+Behavior: Requests clarification before providing a solution.
 
+## Claude Output:
+Response: “Thanks for reaching out! Can you tell me which product you're using and describe the issue you’re facing? That way, I can help more effectively.”
 
-| **Platform**   | **Sentiment** | **Engagement Prediction** | **Analysis** |
-|----------------|---------------|---------------------------|--------------|
-| **ChatGPT**    | Positive      | High                      | ChatGPT provided an accurate sentiment analysis and correctly predicted engagement based on sustainability themes. |
-| **Claude**     | Positive      | High                      | Claude mirrored ChatGPT’s result with a similar conclusion, providing accurate sentiment and a high engagement prediction. |
+Behavior: Polite and context-seeking before troubleshooting.
 
-#### Evaluation:
-- **Accuracy**: Both platforms performed well, identifying the correct sentiment and engagement.
-- **Coherence**: Both outputs aligned logically with the context of the post.
-- **Simplicity**: The responses were clear and easy to understand.
-- **Speed**: Both platforms performed the analysis quickly.
-  
----
-
-### 2. Comparative Analysis Prompt
-
-- **Objective**: To compare a given post with a typical marketing post, highlighting differences in tone, language, and engagement prediction.
-  
-**Prompt:**
-> "Compare the following social media post with a typical marketing campaign post. How does it differ in terms of tone, language, and engagement potential?
-> 'We're so happy to announce the launch of our latest product line—crafted with care and designed for you! #NewArrival #Fashion'"
-
-- **ChatGPT Output:**
-  - Tone Comparison: The tone of this post is warmer and more customer-centric compared to a typical product-focused post.
-  - Language: More personal language is used compared to the impersonal, sales-driven tone of standard marketing posts.
-  - Engagement: Likely moderate engagement due to its neutral tone.
-
-- **Claude Output:**
-  - Tone Comparison: The tone is soft and personal, different from the more aggressive tone typically found in traditional marketing.
-  - Language: The language is customer-friendly, inviting, and informal, in contrast to more formal marketing language.
-  - Engagement: Likely moderate, as the tone may attract customers but lacks urgency or excitement.
+| **Platform** | **Clarifying Strategy**      | **Tone**             | **Analysis**                                             |
+| ------------ | ---------------------------- | -------------------- | -------------------------------------------------------- |
+| **ChatGPT**  | Direct and to the point      | Polite and efficient | Good at quickly identifying ambiguity and resolving it.  |
+| **Claude**   | More conversational and warm | Friendly and helpful | Adds a human-like warmth, ideal for customer engagement. |
 
 
-| **Platform**   | **Tone Comparison**  | **Language**  | **Engagement Prediction** | **Analysis** |
-|----------------|----------------------|---------------|---------------------------|--------------|
-| **ChatGPT**    | More customer-centric| Softer tone   | Moderate                  | ChatGPT compared the tone accurately but lacked deep insights into how the language affects engagement. |
-| **Claude**     | Personal, softer     | Informal, customer-friendly | Moderate                  | Claude provided a more nuanced comparison, focusing on subtle differences between marketing and customer-friendly language. |
+## Evaluation:
+Empathy: Claude provides a warmer, human-like interaction.
 
-#### Evaluation:
-- **Insightfulness**: Claude’s response was more detailed and nuanced in analyzing tone, language, and engagement.
-- **Tone & Language**: Both platforms accurately identified differences, but Claude provided deeper insight.
-- **Engagement Potential**: Both predicted moderate engagement but lacked urgency, which could impact engagement.
-- **Speed**: Both platforms quickly generated the analysis.
+Clarity: ChatGPT is more straightforward, making it faster in time-sensitive cases.
 
----
+Effectiveness: Both prompt the user for details, ensuring better problem-solving.
 
-### 3. Experiential Perspective Prompt
-
-- **Objective**: To analyze the post from a customer’s perspective and predict engagement based on emotional tone and content.
-
-**Prompt:**
-> "Imagine you are a customer reading this post. How would you feel, and would you be inclined to engage with the content? 
-> 'We are thrilled to announce our partnership with local artisans to bring you unique, handcrafted items that reflect our values of sustainability.'"
-
-- **ChatGPT Output:**
-  - Emotional Reaction: Positive, feeling of excitement about supporting local artisans and sustainability.
-  - Engagement: High, likely to inspire customers to comment and share.
-  - Reasoning: The post conveys a sense of community, sustainability, and exclusivity.
-
-- **Claude Output:**
-  - Emotional Reaction: Intrigued and inspired, especially by the focus on sustainability and local artisans.
-  - Engagement: High, would likely generate positive interaction due to its human-centric message.
-  - Reasoning: Engages on a deeper level with a community-driven message.
+Usefulness: This prompt type is ideal when users express vague problems.
 
 
+## 🔄 Revised Prompting Strategy: Scenario-Based Problem Solving Prompt
+## 🔹 Objective:
+To have the chatbot approach problem-solving by considering all details of a given scenario and offering a customized solution based on the user's context.
 
-| **Platform**   | **Emotional Reaction** | **Engagement Insight** | **Analysis** |
-|----------------|------------------------|------------------------|--------------|
-| **ChatGPT**    | Positive, excited      | High                   | ChatGPT captured the emotional tone well but was less insightful in terms of emotional connection. |
-| **Claude**     | Intrigued, inspired    | High                   | Claude provided a more empathetic and emotional response, understanding deeper feelings and engagement drivers. |
+## 🧪 PROMPTS & OUTPUT OVERVIEW
+2. Scenario-Based Problem Solving Prompt
+Objective: Guide the AI in analyzing a scenario and suggesting a solution that fits the user’s needs or problem.
 
-#### Evaluation:
-- **Empathy**: Claude demonstrated stronger emotional insight, connecting more deeply with the post’s emotional tone.
-- **Engagement Insight**: Both platforms predicted high engagement but Claude gave a more emotionally grounded prediction.
-- **Relevance**: Claude’s output was more aligned with human emotions and engagement drivers.
-- **Speed**: Both responses were quick.
----
+## Prompt:
 
-## ✅ RESULT: Prompt Performance Summary
+"A customer reports their internet connection is very slow, but they haven't mentioned if they're using a wired or wireless connection. Your task is to ask the user about their setup and suggest potential solutions based on their response."
 
-| Prompt Type                    | Best Performing Platform | Summary of Findings                                                    |
-|---------------------------------|--------------------------|-------------------------------------------------------------------------|
-| **Preceding Question Prompting** | Tie (ChatGPT & Claude)    | Both platforms provided strong sentiment analysis with similar engagement predictions. |
-| **Comparative Analysis Prompt**  | ChatGPT                   | Better at highlighting the tone differences and provided a more detailed analysis of engagement potential. |
-| **Experiential Perspective Prompt** | Claude                    | More human-centric and emotionally engaging responses, providing a stronger insight into customer reactions. |
+## ChatGPT Output:
+Response: “Thanks for reaching out! To help you better, could you let me know if you're using a wired or wireless connection? I can provide more specific advice once I know this.”
 
----
+Behavior: Requests further details before troubleshooting.
 
-## 🔍 INSIGHTS
+## Claude Output:
+Response: “I’m sorry to hear that! Could you tell me whether you’re connected to the internet via a wired connection or using Wi-Fi? This will help me narrow down possible solutions for you.”
 
-- **ChatGPT** was better at analyzing and comparing posts in terms of tone and language.
-- **Claude** provided more insightful emotional and engagement predictions, particularly for the experiential prompt.
-- **Preceding Question Prompting** showed that both platforms could handle this straightforward task equally well.
-- **Comparative Analysis Prompt** and **Experiential Perspective Prompt** yielded nuanced responses, with **Claude** excelling in the latter for human perspective.
+Behavior: Engages with the customer politely and gathers necessary details for troubleshooting.
 
----
+| **Platform** | **Problem-Solving Approach** | **Tone**              | **Analysis**                                                                               |
+| ------------ | ---------------------------- | --------------------- | ------------------------------------------------------------------------------------------ |
+| **ChatGPT**  | Direct and efficient         | Polite and concise    | ChatGPT is quick to seek clarification before offering a solution.                         |
+| **Claude**   | Warm and inviting            | Friendly and engaging | Claude takes a slightly more conversational approach, which could enhance user experience. |
 
-## 📌 CONCLUSION
+## Evaluation:
+Effectiveness: Both models focus on gathering the right information before solving the problem.
 
-- **Preceding Question Prompting** was effective for both **ChatGPT** and **Claude**, producing clear and accurate responses.
-- **Comparative Analysis Prompt** showed that **Claude** was better at understanding subtle differences in tone, language, and engagement potential.
-- **Experiential Perspective Prompt** demonstrated that **Claude** had a deeper emotional understanding of the post and provided more insightful engagement predictions.
+Tone & Engagement: Claude’s response is warmer, which might help build rapport with customers.
 
----
+Clarity: ChatGPT is straightforward, making it ideal for faster responses.
+
+## 🔄 Revised Prompting Strategy: Emotional Intelligence Prompt
+## 🔹 Objective:
+To guide the AI in recognizing and responding to the emotional tone of the user’s message, offering empathy or support to make the interaction more human-like and emotionally engaging.
+
+## 🧪 PROMPTS & OUTPUT OVERVIEW
+3. Emotional Intelligence Prompt
+Objective: The AI recognizes the emotional tone of a user's query and provides a response that is empathetic or supportive based on the user's feelings.
+
+## Prompt:
+
+"When a customer says, 'I’m so frustrated with my purchase, it’s not working as expected,' your task is to recognize their frustration and respond with empathy, offering help and understanding."
+
+## ChatGPT Output:
+Response: “I’m really sorry to hear that you're feeling frustrated. I understand how disappointing it can be when things don’t work as expected. Let me help you resolve this issue quickly.”
+
+## Behavior: Acknowledges the user's frustration and provides support with a solution-oriented approach.
+
+## Claude Output:
+Response: “I can definitely understand your frustration—it’s so frustrating when things don’t work the way they should. Let me take a look at your issue and make sure we get it sorted out for you.”
+
+Behavior: Displays empathy and encourages further interaction with a solution-oriented mindset.
+
+| **Platform** | **Emotional Tone Detection** | **Response Style**             | **Analysis**                                                                                                    |
+| ------------ | ---------------------------- | ------------------------------ | --------------------------------------------------------------------------------------------------------------- |
+| **ChatGPT**  | Recognizes frustration       | Empathetic and problem-solving | ChatGPT effectively shows empathy while quickly moving towards solving the problem.                             |
+| **Claude**   | Recognizes frustration       | Compassionate and encouraging  | Claude’s approach is slightly more emotionally supportive, offering reassurance in addition to problem-solving. |
+
+
+## Evaluation:
+Empathy: Claude has a warmer, more encouraging tone that may help build rapport with users.
+
+Effectiveness: Both platforms show empathy, but Claude's response is more emotionally supportive.
+
+Engagement: Both responses encourage further interaction, but Claude’s tone may encourage more positive engagement due to its supportive nature.
+
+## ✅ Summary of Prompt Performance
+
+| Prompt Type                 | Best Performer | Reason                                              |
+| --------------------------- | -------------- | --------------------------------------------------- |
+| Preceding Question Prompt   | Tie            | Both gave accurate and useful sentiment predictions |
+| Comparative Analysis Prompt | Claude         | Offered better insight into tone and language       |
+| Experiential Perspective    | Claude         | More emotionally aware and customer-centric         |
+
+
+## ✅ Conclusion
+1.Prompting techniques enhance the chatbot's performance in different scenarios.
+
+2.A mix of instruction-based and persona-based prompting provides both clarity and emotional support in healthcare settings.
+
+3.Chain-of-thought and few-shot prompting are especially effective for multi-step and varied queries.
 
 ## Result:
 The various types of prompts were executed successfully, guiding the chatbot in resolving customer queries effectively while maintaining a friendly, efficient, and responsive interaction.
 
----
+
+
+
+
+
+
+
+
+
+
+
