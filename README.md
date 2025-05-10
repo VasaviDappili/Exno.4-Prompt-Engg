@@ -109,6 +109,8 @@ Compare outputs from different techniques.
 
 Validate accuracy, tone, and contextual understanding.
 
+## 🧪 PROMPTS & OUTPUT OVERVIEW
+
 ## 🔄 Revised Prompting Strategy: Clarification-Based Prompting
 ## 🔹 Objective:
 To improve the chatbot’s accuracy by encouraging it to ask clarifying questions before giving a solution when user queries are vague or ambiguous.
